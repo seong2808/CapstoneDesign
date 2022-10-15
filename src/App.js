@@ -16,10 +16,9 @@ function App() {
   
   return (
     <div className="App">
-      
       <div class="con1">
 
-      <img id="logo" src="./logo.png" />
+        <img id="logo" src="./logo.png" />
       
         <div class="con2">
           <nav id="main_menu" class="main_menu">
@@ -42,12 +41,10 @@ function App() {
             </ul>
           </nav>
         </div>
-
       </div>
-
-    <div>
-      <img src="./ride.jpg" width="100%" height="300px"/>
-    </div>
+      <div class="ride">
+        <img src="./ride.jpg" width="100%" height="300px"/>
+      </div>
 
       <div class="section">
         <input type="radio" name="slide" id="slide01" checked/>
@@ -91,8 +88,8 @@ function App() {
             </div>
         
           </div>
+        </div>
       </div>
-    </div>
 
     </div>
   );
