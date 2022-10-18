@@ -22,25 +22,23 @@ function App() {
       
         <div class="con2">
           <nav id="main_menu" class="main_menu">
-            <ul>
-              <li>
+            
                 <a href="">소개 및 사용법</a>
-              </li>
-              <li>
+              
                 <a href="">검색</a>
-              </li>
-              <li>
+              
                 <a href="">안전수칙</a>
-              </li>
-              <li>
+            
                 <a href="">자전거 정책</a>
-              </li>
-              <li>
+             
                 <a href="">코로나19</a>
-              </li>
-            </ul>
+            
           </nav>
         </div>
+        <div className='more-btn'>
+          <i className='icon'></i>
+        </div>
+
       </div>
       <div class="ride">
         <img src="./ride.jpg" width="100%" height="300px"/>
