@@ -22,9 +22,7 @@ function App() {
           <i className="icon"></i>
         </div>
       </div> 
-
       <Main1 />
-    
       <hr></hr>
       <div className="footer">
         빈 공간
