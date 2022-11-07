@@ -16,8 +16,8 @@ export default function Search() {
           <div className="Kakaomap_road">
             <Map />
           </div>
+          <Map_info />
         </div>
-        <Map_info />
       </div>
     );
   }
