@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import "./banner.css";
 import "./start_style.css";
+import "./Search.css";
 import Main1 from "./component/Main1";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import Intro from "./component/Intro";
@@ -34,8 +35,6 @@ function App() {
           </Route>
         
         </Switch>
-
-        <hr></hr>
         <div className="footer">빈 공간</div>
       </div>
     </BrowserRouter>

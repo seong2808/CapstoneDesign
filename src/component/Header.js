@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 export default function Header() {
     return (
+        <div className="header">
         <div className="con1">
             <Link to="/Home">
                 <img id="logo" src="./logo.png" />
@@ -11,10 +12,13 @@ export default function Header() {
                 <Link to="/Safety">자전거 안전교육</Link>
                 <Link to="/Search">검색</Link>
             </nav>
+        
 
             <div className="more-btn">
             <i className="icon"></i>
             </div>
+        </div>
+        <div className="con1_space"></div>
         </div>
     );
   }
