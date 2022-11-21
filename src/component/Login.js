@@ -1,21 +1,48 @@
+import "../Login_style.css";
 
 export default function Login() {
-    return (
-      <div className="Login">
+
+  var x = document.getElementById("login");
+  var y = document.getElementById("register");
+  var z = document.getElementById("btn");
   
-        <h2>로그인</h2>
-        
-        <div className="Login_user">
-            <div>
-                <input label="이메일" name="email" placeholder="이메일"/>
-            </div>
-            <div>
-                <input label="비밀번호" name="password" placeholder="비밀번호" type="password"/>
-            </div>
-            <button>로그인</button>
-            <button>회원가입</button>
-        </div>
-        
-      </div>
+  function Login_fn(){
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0";
+  }
+  function Register_fn(){
+    x.style.left = "-400px";
+    y.style.left = "50px";
+    z.style.left = "110px";
+  }
+
+    return (
+
+        <div className="wrap">
+          <div className="form-wrap">
+              <div className="button-wrap">
+                  <div id="btn"></div>
+                  <button type="button" className="togglebtn" onClick={Login_fn}>LOG IN</button>
+                  <button type="button" className="togglebtn" onClick={Register_fn}>REGISTER</button>
+              </div>
+              <form id="login" action="" className="input-group">
+                  <input type="text" className="input-field" placeholder="User name or Email" required/>                  
+                  <input type="password" className="input-field" placeholder="Enter Password" required/>                    
+                  <input type="checkbox" className="checkbox"/><span>Remember Password</span>                    
+                  <button className="submit">Login</button>
+              </form>
+              <form id="register" action="" className="input-group">
+                  <input type="text" className="input-field" placeholder="User name" required/>                    
+                  <input type="email" className="input-field" placeholder="Your ID" required/>                  
+                  <input type="password" className="input-field" placeholder="Enter Password" required />
+                  <input type="password" className="input-field" placeholder="Enter Password Check" required />   
+                  <input type="password" className="input-field" placeholder="Your E-mail" required />                  
+                  <input type="checkbox" className="checkbox"/><span>Terms and conditions</span>
+                  <button className="submit">REGISTER</button>
+              </form>
+          </div>
+        </div>        
+
     );
   }

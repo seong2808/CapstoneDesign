@@ -5,7 +5,7 @@ export default function Map() {
 
     useEffect(()=>{
         // 지도를 표시할 div
-        let mapContainer = document.getElementById('map')
+        const mapContainer = document.getElementById('map')
 
         // 지도의 옵션 설정
         let mapOption = {
@@ -16,8 +16,8 @@ export default function Map() {
         };
 
         // 지도를 표시할 div와 지도 옵션으로 지도를 생성
-        var map = new kakao.maps.Map(mapContainer, mapOption);
-
+        const map = new kakao.maps.Map(mapContainer, mapOption);
+        
     }, [])
 
     return(

@@ -13,6 +13,7 @@ import Intro from "./component/Intro";
 import Header from "./component/Header";
 import Search from "./component/Search";
 import Safety from "./component/Safety";
+import Login from "./component/Login";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/Search">
             <Search />
+          </Route>
+          <Route path="/Login">
+            <Login />
           </Route>
 
         
