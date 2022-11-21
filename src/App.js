@@ -8,7 +8,7 @@ import "./Modal_style.css";
 import "./Category_style.css";
 import "./Sa_style.css";
 import Main1 from "./component/Main1";
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Intro from "./component/Intro";
 import Header from "./component/Header";
 import Search from "./component/Search";
